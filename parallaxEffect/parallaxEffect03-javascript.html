@@ -411,7 +411,7 @@
        });
 
        window.addEventListener("scroll", function(){
-           let scrollTop = document.documentElement.scrollTop || document.documentElement.scrollTop || window.pageYOffset;
+           let scrollTop = window.scrollY || document.documentElement.scrollTop || window.pageYOffset;
 
            //메뉴버튼
            if(scrollTop > 0){

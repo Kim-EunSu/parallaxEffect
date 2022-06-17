@@ -422,6 +422,7 @@
         $(window).scroll(function(){
             nowScrollTop = true;
 
+            // setInterval은 일정시간마다 함수를 반복해서 실행 , setTimeout()은 일정 시간 후 함수를 한번 실행
             setInterval(function(){
                 if(nowScrollTop){
                     nowScrollTop = false;
